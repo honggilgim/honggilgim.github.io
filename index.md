@@ -1,12 +1,12 @@
 ---
 layout: page
-home-title: H2O-ac Theme For Jekyll
-description: 基于可能是最好看的 Jekyll 主题 H2O 的学术版主题
+home-title: 홍돌이 집사의 blog
+description: honggilgim's blog
 ---
 
 # About me
 
-&emsp;&emsp;I am a PhD student from xxx University.....
+고양이 홍돌이를 키우고 있는 신입 개발자입니다~
 
 # Publications
 
@@ -15,17 +15,13 @@ description: 基于可能是最好看的 Jekyll 主题 H2O 的学术版主题
 
 # Contact
 
-Email: zhonger[at]live.cn (Please replace [at] with @.)
+Email: ghdrlf0911@naver.com
+<br>Github : https://github.com/honggilgim
 
-# 关于我
+# Carrer
 
-&emsp;&emsp;我是一名来自xx大学的博士生。。。。。。
+현재 백엔드 개발자로 근무하고 있는 신입 개발자입니다. 풀스텍 개발자를 목표로 하루하루 공부하고 있습니다.
 
-# 论文发表
+# blog description
 
-1. 论文1 [[DOI]](#)
-2. 论文2 [[DOI]](#)
-
-# 联系我
-
-邮箱：zhonger[at]live.cn (请使用@替换[at])
+이 블로그는 개발 공부 목적으로 만들어졌습니다.
