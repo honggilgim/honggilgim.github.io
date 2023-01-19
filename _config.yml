@@ -2,9 +2,9 @@
 version: 1.1.14
 
 # Site settings 配置站点
-title: 'Mr Li'
-description: '个人的一个技术博客站点，主要用于记录个人在学习过程中遇到的技术问题及解决方法、技术实验，以及一些比较有趣的事情。'
-keyword: 'zhonger，zhonger的博客，nodejs，kvm, 机器学习'
+title: 'Hong Gil'
+description: '개인 기술 블로그 사이트로 주로 기술적 문제와 솔루션, 기술 실험, 개인이 학습 과정에서 접하는 몇 가지 흥미로운 사항을 기록하는 데 사용됩니다.'
+keyword: '스프링，웹 보안，신기술，알고리즘, 머신러닝'
 url: 'https://h2o-ac.pages.dev' # your host
 
 # when build blog on server, if you don't need baseurl, you should leave this value blank.
@@ -55,10 +55,10 @@ favicon: "/favicon.ico"
 footer:
   since: 2015
 
-# Author 配置博主信息
-author: 'zhonger'
-nickname: 'zhonger'
-bio: '全栈开发者，热爱前端、运维和架构设计'
+# Author
+author: 'honggil'
+nickname: 'honggil'
+bio: '백엔드 개발자, 스프링, 머신러닝에 다양한 흥미를 가졌습니다.'
 avatar: '/assets/img/profile.webp'
 
 # Search
@@ -109,7 +109,7 @@ supports:
   webify: 
 
 # Beian 备案号
-beian: '沪ICP备xxxxxxxx号'
+beian: '대한민국 - 서울'
 
 # CC License
 cclicense: true

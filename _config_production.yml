@@ -1,10 +1,10 @@
 # jekyll-theme-h2o-ac
 version: 1.1.14
 
-# Site settings 配置站点
-title: 'Mr Li'
-description: '个人的一个技术博客站点，主要用于记录个人在学习过程中遇到的技术问题及解决方法、技术实验，以及一些比较有趣的事情。'
-keyword: 'zhonger，zhonger的博客，nodejs，kvm, 机器学习'
+# Site settings
+title: 'honggil's blog'
+description: '신입 개발자의 블로그'
+keyword: 'honggil，honggilblog，spring，security, machinelearing'
 url: 'https://h2o-ac.pages.dev' # your host
 
 # when build blog on server, if you don't need baseurl, you should leave this value blank.
@@ -60,9 +60,9 @@ footer:
   since: 2015
 
 # Author 配置博主信息
-author: 'zhonger'
-nickname: 'zhonger'
-bio: '全栈开发者，热爱前端、运维和架构设计'
+author: 'honggil'
+nickname: 'honggil'
+bio: '백엔드 개발자，스프링、여러가지 공부중'
 avatar: '/assets/img/profile.webp'
 
 # Search
@@ -78,7 +78,7 @@ comments:
   waline: true
   waline_url: 'https://h2o-ac-waline.deta.dev/'
   waline_reaction: true
-  waline_locale: "{reaction0: '赞一个', reaction1: '踩一下', reaction2: '有点酷', reaction3: '看不懂', reaction4: '啥玩意', reaction5: '想睡觉'}"
+  waline_locale: "{reaction0: '좋아요', reaction1: '좋아용', reaction2: '멋지다', reaction3: '읽을수없어', reaction4: '왜?', reaction5: '졸려'}"
 
 # MathJax 公式支持 by Ray-Eldath
 mathjax: true
@@ -113,7 +113,7 @@ supports:
   webify: 
 
 # Beian 备案号
-beian: '沪ICP备xxxxxxxx号'
+beian: '한국 - 서울'
 
 # CC License
 cclicense: true

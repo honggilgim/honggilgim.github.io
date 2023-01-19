@@ -51,7 +51,7 @@
             {% endif %}
         {% endfor %}
         <section class="tags-card">
-            <div class="links" rel="links">热门标签</div>
+            <div class="links" rel="links">해시태그</div>
             {% assign pnum = 0 %}
             {% for i in (1..max_tag_count) reversed %}
                 {% for tag in site.tags %}
@@ -81,7 +81,7 @@
 
         <section class="tags-card">
             {% assign posts = site.posts | sort: "date" | reverse %}
-            <div class="links">最近更新</div>
+            <div class="links">최근 글</div>
             <ul class="latest-articles">
                 {% for post in posts limit:3 %}
                     <li>

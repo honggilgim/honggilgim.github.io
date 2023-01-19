@@ -1,6 +1,6 @@
 ---
 layout: page
-home-title: Welcome to zhonger's blog!
+home-title: Welcome to honggil's blog!
 description: Writing, writing, writing ...
 ---
 
