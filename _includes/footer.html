@@ -32,7 +32,7 @@
   {% endif %}
   <section>
     {% if site.alivetime %}
-    本站已运行 <span class="alivetime"></span>
+    운영중 사이트 <span class="alivetime"></span>
     {% endif %}
     {% if site.foreverblog or site.wormhole %}
     <br/>
@@ -51,11 +51,11 @@
 </footer>
 <div class="cookie-tip">
   {% if site.language == 'zh-cn' %}
-  {{ cookie.cookieconsent_status }}为了提升本站的使用体验和必要功能的正常使用，本站会使用本地 Cookie。详细请查看「<a href="{{ site.tos | prepend: site.baseurl }}">本站使用条款</a>」了解更多。
+  {{ cookie.cookieconsent_status }}사이트 사용자의 편의를 위해서 이 사이트는 로컬을 사용합니다. 세부 사항을 확인하세요<a href="{{ site.tos | prepend: site.baseurl }}">(policy)</a>
   {% else %}
   In order to improve the experience and gurantee necessary functions of our website, we will use the local Cookie. More details in <a href="{{ site.tos | prepend: site.baseurl }}">ToS</a> page.
   {% endif %}
-  <button id="accept-tos">同意（Accept）</button>
+  <button id="accept-tos">（Accept）</button>
 </div>
 <button id="list" aria-label="Scroll back to top" class="mobile-list" type="button">
   <svg class="icon list day" aria-hidden="true">

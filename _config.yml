@@ -109,7 +109,7 @@ supports:
   webify: 
 
 # Beian 备案号
-beian: '대한민국 - 서울'
+beian: 'Repiblic of South Korea, Seoul'
 
 # CC License
 cclicense: true
