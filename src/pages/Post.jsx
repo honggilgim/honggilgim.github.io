@@ -22,6 +22,11 @@ function Post() {
   return (
     <article className="post">
       <Link to="/" className="back-link">← Back to home</Link>
+      {post.thumbnail && (
+        <div className="post-thumbnail-large">
+          <img src={post.thumbnail} alt={post.title} />
+        </div>
+      )}
       <header className="post-header">
         <h1>{post.title}</h1>
         <p className="post-meta">

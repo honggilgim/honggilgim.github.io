@@ -16,9 +16,23 @@ function Home() {
           {posts.map((post) => (
             <article key={post.id} className="post-card">
               <Link to={`/post/${post.id}`}>
-                <h3>{post.title}</h3>
-                <p className="post-date">{post.date}</p>
-                <p className="post-excerpt">{post.excerpt}</p>
+                {post.thumbnail && (
+                  <div className="post-thumbnail">
+                    <img src={post.thumbnail} alt={post.title} />
+                  </div>
+                )}
+                <div className="post-card-content">
+                  <h3>{post.title}</h3>
+                  <p className="post-date">{post.date}</p>
+                  <p className="post-excerpt">{post.excerpt}</p>
+                  {post.tags && post.tags.length > 0 && (
+                    <div className="post-card-tags">
+                      {post.tags.map(tag => (
+                        <span key={tag} className="post-card-tag">{tag}</span>
+                      ))}
+                    </div>
+                  )}
+                </div>
               </Link>
             </article>
           ))}

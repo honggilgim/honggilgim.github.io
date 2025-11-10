@@ -1,5 +1,6 @@
 // 마크다운 파일 import
 import testPostMd from '../posts/test-post.md?raw'
+import javaWrapperClassMd from '../posts/java-wrapper-class.md?raw'
 
 export const posts = [
   {
@@ -63,6 +64,16 @@ export const posts = [
     tags: ['Markdown', 'Test'],
     markdown: true,
     markdownContent: testPostMd
+  },
+  {
+    id: 4,
+    title: '자바 Wrapper Class',
+    date: '2025-01-18',
+    excerpt: '자바의 Wrapper Class와 boxing, unboxing에 대해 알아봅니다.',
+    tags: ['자바', 'Java'],
+    thumbnail: '/thumbnails/JAVA.png',
+    markdown: true,
+    markdownContent: javaWrapperClassMd
   }
 ]
 
