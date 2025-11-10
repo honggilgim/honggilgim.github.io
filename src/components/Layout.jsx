@@ -1,7 +1,11 @@
+import { useState } from 'react'
 import { Link } from 'react-router-dom'
+import AboutSlide from './AboutSlide'
 import './Layout.css'
 
 function Layout({ children }) {
+  const [isAboutOpen, setIsAboutOpen] = useState(false)
+
   return (
     <div className="app">
       <header className="header">
@@ -11,7 +15,13 @@ function Layout({ children }) {
           </Link>
           <nav className="nav">
             <Link to="/">Home</Link>
-            <Link to="/about">About</Link>
+            <button 
+              className="nav-about-btn" 
+              onClick={() => setIsAboutOpen(true)}
+              aria-label="About me"
+            >
+              About me
+            </button>
           </nav>
         </div>
       </header>
@@ -25,6 +35,7 @@ function Layout({ children }) {
           <p>&copy; 2025 Honggilgim Blog. All rights reserved.</p>
         </div>
       </footer>
+      <AboutSlide isOpen={isAboutOpen} onClose={() => setIsAboutOpen(false)} />
     </div>
   )
 }

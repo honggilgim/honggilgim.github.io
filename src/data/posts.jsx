@@ -68,9 +68,10 @@ export const posts = [
   {
     id: 4,
     title: '자바 Wrapper Class',
-    date: '2025-01-18',
+    date: '2023-10-18',
     excerpt: '자바의 Wrapper Class와 boxing, unboxing에 대해 알아봅니다.',
     tags: ['자바', 'Java'],
+    series: '자바',
     thumbnail: '/thumbnails/JAVA.png',
     markdown: true,
     markdownContent: javaWrapperClassMd

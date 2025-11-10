@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
 import { posts } from '../data/posts.jsx'
+import { formatDate } from '../utils/dateFormatter'
 import './Home.css'
 
 function Home() {
@@ -23,7 +24,7 @@ function Home() {
                 )}
                 <div className="post-card-content">
                   <h3>{post.title}</h3>
-                  <p className="post-date">{post.date}</p>
+                  <p className="post-date">{formatDate(post.date)}</p>
                   <p className="post-excerpt">{post.excerpt}</p>
                   {post.tags && post.tags.length > 0 && (
                     <div className="post-card-tags">
