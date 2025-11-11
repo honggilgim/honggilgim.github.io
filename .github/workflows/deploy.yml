@@ -50,9 +50,15 @@ jobs:
           fi
           if grep -q "\.jsx" dist/index.html; then
             echo "Error: dist/index.html contains .jsx references"
+            cat dist/index.html
             exit 1
           fi
           echo "Build verification passed"
+          echo "Checking dist/index.html content:"
+          cat dist/index.html
+          echo ""
+          echo "Checking dist/assets directory:"
+          ls -la dist/assets/ || echo "No assets directory found"
       
       - name: Setup Pages
         uses: actions/configure-pages@v4
