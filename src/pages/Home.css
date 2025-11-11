@@ -7,7 +7,7 @@
 .hero h2 {
   font-size: 2rem;
   margin-bottom: 0.75rem;
-  color: #4682B4;
+  color: #000;
   font-weight: 900;
   font-family: 'Nunito', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
   letter-spacing: -0.02em;
@@ -21,7 +21,7 @@
 .posts-section h2 {
   font-size: 1.5rem;
   margin-bottom: 1.5rem;
-  color: #4682B4;
+  color: #000;
   font-weight: 600;
 }
 
@@ -33,7 +33,7 @@
 
 .post-card {
   background: #ffffff;
-  border: 1px solid #B0E0E6;
+  border: 1px solid #000;
   border-radius: 10px;
   overflow: hidden;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -44,8 +44,8 @@
 
 .post-card:hover {
   transform: translateY(-8px);
-  box-shadow: 0 8px 24px rgba(70, 130, 180, 0.15);
-  border-color: #87CEEB;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  border-color: #333;
 }
 
 .post-card a {
@@ -94,14 +94,14 @@
 .post-card h3 {
   font-size: 1.25rem;
   margin-bottom: 0.5rem;
-  color: #4682B4;
+  color: #000;
   line-height: 1.3;
   font-weight: 600;
   transition: color 0.2s ease;
 }
 
 .post-card:hover h3 {
-  color: #4682B4;
+  color: #000;
 }
 
 .post-date {
@@ -111,7 +111,7 @@
 }
 
 .post-excerpt {
-  color: #4682B4;
+  color: #000;
   line-height: 1.6;
   margin-bottom: 0.75rem;
   flex: 1;
@@ -128,7 +128,7 @@
   gap: 0.4rem;
   margin-top: auto;
   padding-top: 0.75rem;
-  border-top: 1px solid #B0E0E6;
+  border-top: 1px solid #ddd;
 }
 
 .post-card-tag {
@@ -154,13 +154,13 @@
   gap: 0.5rem;
   margin-top: 2.5rem;
   padding-top: 2rem;
-  border-top: 1px solid #B0E0E6;
+  border-top: 1px solid #ddd;
 }
 
 .pagination-btn {
   background-color: #ffffff;
-  border: 1px solid #B0E0E6;
-  color: #4682B4;
+  border: 1px solid #000;
+  color: #000;
   padding: 0.5rem 0.9rem;
   border-radius: 6px;
   font-size: 0.9rem;
@@ -175,21 +175,22 @@
 }
 
 .pagination-btn:hover {
-  background-color: #E0F6FF;
-  border-color: #87CEEB;
+  background-color: #000;
+  color: #ffffff;
+  border-color: #000;
   transform: translateY(-2px);
 }
 
 .pagination-btn.active {
-  background-color: #4682B4;
+  background-color: #000;
   color: #ffffff;
-  border-color: #4682B4;
+  border-color: #000;
   font-weight: 600;
 }
 
 .pagination-btn.active:hover {
-  background-color: #5F9EA0;
-  border-color: #5F9EA0;
+  background-color: #333;
+  border-color: #333;
 }
 
 @media (max-width: 768px) {

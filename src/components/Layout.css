@@ -1,8 +1,12 @@
 .header {
-  background-color: #B0E0E6;
-  color: #4682B4;
+  background-color: #fff;
+  color: #000;
   padding: 0.75rem 0;
-  box-shadow: 0 2px 8px rgba(70, 130, 180, 0.1);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  border-bottom: 1px solid #000;
 }
 
 .header .container {
@@ -24,13 +28,13 @@
 
 .logo h1 {
   font-size: 1.25rem;
-  color: #4682B4;
+  color: #000;
   font-weight: 600;
   transition: color 0.2s ease;
 }
 
 .logo:hover h1 {
-  color: #4682B4;
+  color: #000;
 }
 
 .nav {
@@ -39,7 +43,7 @@
 }
 
 .nav a {
-  color: #4682B4;
+  color: #000;
   font-weight: 500;
   font-size: 0.9rem;
   transition: all 0.2s ease;
@@ -48,7 +52,7 @@
 }
 
 .nav a:hover {
-  color: #4682B4;
+  color: #000;
   font-weight: 600;
   transform: translateX(4px);
 }
@@ -57,7 +61,7 @@
 .nav-about-btn {
   background: none;
   border: none;
-  color: #4682B4;
+  color: #000;
   font-weight: 500;
   font-size: 0.9rem;
   font-family: inherit;
@@ -69,7 +73,7 @@
 
 .nav-menu-btn:hover,
 .nav-about-btn:hover {
-  color: #4682B4;
+  color: #000;
   font-weight: 600;
   transform: translateX(4px);
 }
@@ -86,11 +90,11 @@
 }
 
 .footer {
-  background-color: #E0F6FF;
+  background-color: #000;
   padding: 1.25rem 0;
   margin-top: auto;
   text-align: center;
-  color: #4682B4;
+  color: #fff;
   font-size: 0.875rem;
 }
 

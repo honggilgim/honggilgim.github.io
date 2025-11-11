@@ -26,7 +26,7 @@
   max-width: 90vw;
   height: 100vh;
   background-color: #fff;
-  box-shadow: -2px 0 10px rgba(70, 130, 180, 0.15);
+  box-shadow: -2px 0 10px rgba(0, 0, 0, 0.15);
   z-index: 999;
   overflow-y: auto;
   animation: slideIn 0.3s ease;
@@ -50,7 +50,7 @@
   background: none;
   border: none;
   font-size: 1.25rem;
-  color: #4682B4;
+  color: #000;
   cursor: pointer;
   padding: 0.4rem;
   line-height: 1;
@@ -59,7 +59,7 @@
 }
 
 .menu-close:hover {
-  color: #5F9EA0;
+  color: #333;
 }
 
 .menu-slide-content {
@@ -70,7 +70,7 @@
 .menu-slide-content h1 {
   font-size: 1.5rem;
   margin-bottom: 1.5rem;
-  color: #4682B4;
+  color: #000;
   font-weight: 600;
 }
 
@@ -81,19 +81,19 @@
 .menu-section h2 {
   font-size: 1.1rem;
   margin-bottom: 0.75rem;
-  color: #4682B4;
+  color: #000;
   font-weight: 600;
   padding-bottom: 0.4rem;
-  border-bottom: 1.5px solid #E0F6FF;
+  border-bottom: 1.5px solid #ddd;
 }
 
 .menu-about-btn {
   width: 100%;
   padding: 0.75rem;
-  background-color: #E0F6FF;
-  border: 1.5px solid #4682B4;
+  background-color: #fff;
+  border: 1.5px solid #000;
   border-radius: 6px;
-  color: #4682B4;
+  color: #000;
   font-size: 0.95rem;
   font-weight: 600;
   cursor: pointer;
@@ -104,7 +104,7 @@
 }
 
 .menu-about-btn:hover {
-  background-color: #4682B4;
+  background-color: #000;
   color: #fff;
   transform: translateX(4px);
 }
@@ -126,10 +126,10 @@
 
 .series-title {
   font-size: 0.95rem;
-  color: #4682B4;
+  color: #000;
   font-weight: 600;
   padding-left: 0.4rem;
-  border-left: 2.5px solid #4682B4;
+  border-left: 2.5px solid #000;
   margin: 0;
   flex: 1;
 }
@@ -149,14 +149,14 @@
 }
 
 .series-toggle-btn:hover {
-  background-color: #E0F6FF;
+  background-color: #f5f5f5;
 }
 
 .chevron-icon {
   width: 8px;
   height: 8px;
-  border-right: 2px solid #4682B4;
-  border-bottom: 2px solid #4682B4;
+  border-right: 2px solid #000;
+  border-bottom: 2px solid #000;
   transform: rotate(-45deg);
   transition: transform 0.3s ease;
   display: inline-block;
@@ -204,7 +204,7 @@
 }
 
 .section-toggle-btn:hover {
-  background-color: #E0F6FF;
+  background-color: #f5f5f5;
 }
 
 .all-posts-content {
@@ -242,8 +242,8 @@
 }
 
 .menu-post-link:hover {
-  background-color: #E0F6FF;
-  border-color: #4682B4;
+  background-color: #f5f5f5;
+  border-color: #000;
   transform: translateX(4px);
 }
 
@@ -266,7 +266,7 @@
 .menu-post-title {
   font-size: 0.875rem;
   font-weight: 500;
-  color: #4682B4;
+  color: #000;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -274,7 +274,7 @@
 
 .menu-post-date {
   font-size: 0.75rem;
-  color: #6c757d;
+  color: #5F9EA0;
 }
 
 @media (max-width: 768px) {
