@@ -42,6 +42,18 @@ jobs:
       - name: Build
         run: npm run build
       
+      - name: Verify build output
+        run: |
+          if [ ! -f "dist/index.html" ]; then
+            echo "Error: dist/index.html not found"
+            exit 1
+          fi
+          if grep -q "\.jsx" dist/index.html; then
+            echo "Error: dist/index.html contains .jsx references"
+            exit 1
+          fi
+          echo "Build verification passed"
+      
       - name: Setup Pages
         uses: actions/configure-pages@v4
       
