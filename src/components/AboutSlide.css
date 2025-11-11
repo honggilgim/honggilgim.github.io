@@ -22,7 +22,7 @@
   position: fixed;
   top: 0;
   right: 0;
-  width: 400px;
+  width: 360px;
   max-width: 90vw;
   height: 100vh;
   background-color: #fff;
@@ -45,14 +45,14 @@
 
 .about-close {
   position: absolute;
-  top: 1rem;
-  right: 1rem;
+  top: 0.75rem;
+  right: 0.75rem;
   background: none;
   border: none;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   color: #4682B4;
   cursor: pointer;
-  padding: 0.5rem;
+  padding: 0.4rem;
   line-height: 1;
   transition: color 0.2s ease;
   z-index: 1000;
@@ -63,15 +63,97 @@
 }
 
 .about-slide-content {
-  padding: 3rem 2rem 2rem;
+  padding: 2.25rem 1.5rem 1.5rem;
   flex: 1;
 }
 
 .about-slide-content h1 {
-  font-size: 2rem;
-  margin-bottom: 2rem;
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
   color: #4682B4;
   font-weight: 600;
+}
+
+.about-profile {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.profile-image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0.75rem;
+}
+
+.profile-image {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #4682B4;
+  box-shadow: 0 3px 10px rgba(70, 130, 180, 0.2);
+}
+
+.profile-image-placeholder {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  background-color: #E0F6FF;
+  border: 3px solid #4682B4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #4682B4;
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+
+.profile-info {
+  text-align: center;
+}
+
+.profile-info h2 {
+  font-size: 1.4rem;
+  margin-bottom: 0.75rem;
+  color: #4682B4;
+  font-weight: 600;
+}
+
+.profile-intro {
+  font-size: 0.95rem;
+  line-height: 1.7;
+  color: #495057;
+  margin-bottom: 1.5rem;
+}
+
+.profile-stack {
+  text-align: left;
+}
+
+.profile-stack h3 {
+  font-size: 1.1rem;
+  margin-bottom: 0.75rem;
+  color: #4682B4;
+  font-weight: 600;
+}
+
+.profile-stack ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.profile-stack li {
+  padding: 0.6rem 0.85rem;
+  background-color: #E0F6FF;
+  border-left: 3px solid #4682B4;
+  margin-bottom: 0.4rem;
+  color: #4682B4;
+  font-weight: 500;
+  border-radius: 4px;
+  font-size: 0.9rem;
 }
 
 .about-content {
@@ -108,11 +190,29 @@
   }
   
   .about-slide-content {
-    padding: 3rem 1.5rem 2rem;
+    padding: 2rem 1.25rem 1.5rem;
   }
   
   .about-slide-content h1 {
-    font-size: 1.75rem;
+    font-size: 1.35rem;
+    margin-bottom: 1.25rem;
+  }
+  
+  .profile-image {
+    width: 140px;
+    height: 140px;
+  }
+  
+  .profile-image-placeholder {
+    width: 140px;
+    height: 140px;
+  }
+  
+  .profile-info h2 {
+    font-size: 1.3rem;
+  }
+  
+  .profile-intro {
+    font-size: 0.9rem;
   }
 }
-

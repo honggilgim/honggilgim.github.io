@@ -1,14 +1,14 @@
 .header {
   background-color: #B0E0E6;
   color: #4682B4;
-  padding: 1rem 0;
+  padding: 0.75rem 0;
   box-shadow: 0 2px 8px rgba(70, 130, 180, 0.1);
 }
 
 .header .container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 2rem;
+  padding: 0 1.5rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -23,7 +23,7 @@
 }
 
 .logo h1 {
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   color: #4682B4;
   font-weight: 600;
   transition: color 0.2s ease;
@@ -35,14 +35,15 @@
 
 .nav {
   display: flex;
-  gap: 2rem;
+  gap: 1.25rem;
 }
 
 .nav a {
   color: #4682B4;
   font-weight: 500;
+  font-size: 0.9rem;
   transition: all 0.2s ease;
-  padding: 0.25rem 0.5rem;
+  padding: 0.2rem 0.4rem;
   display: inline-block;
 }
 
@@ -52,19 +53,21 @@
   transform: translateX(4px);
 }
 
+.nav-menu-btn,
 .nav-about-btn {
   background: none;
   border: none;
   color: #4682B4;
   font-weight: 500;
-  font-size: inherit;
+  font-size: 0.9rem;
   font-family: inherit;
   cursor: pointer;
   transition: all 0.2s ease;
-  padding: 0.25rem 0.5rem;
+  padding: 0.2rem 0.4rem;
   display: inline-block;
 }
 
+.nav-menu-btn:hover,
 .nav-about-btn:hover {
   color: #4682B4;
   font-weight: 600;
@@ -73,32 +76,33 @@
 
 .main {
   flex: 1;
-  padding: 2rem 0;
+  padding: 1.5rem 0;
 }
 
 .main .container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 2rem;
+  padding: 0 1.5rem;
 }
 
 .footer {
   background-color: #E0F6FF;
-  padding: 2rem 0;
+  padding: 1.25rem 0;
   margin-top: auto;
   text-align: center;
   color: #4682B4;
+  font-size: 0.875rem;
 }
 
 .footer .container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 2rem;
+  padding: 0 1.5rem;
 }
 
 @media (max-width: 768px) {
   .header {
-    padding: 0.75rem 0;
+    padding: 0.6rem 0;
   }
   
   .header .container {
@@ -108,16 +112,23 @@
   }
   
   .logo h1 {
-    font-size: 1.25rem;
+    font-size: 1.1rem;
   }
   
   .nav {
-    gap: 1.5rem;
-    font-size: 0.9rem;
+    gap: 1rem;
+    font-size: 0.85rem;
+  }
+  
+  .nav a,
+  .nav-menu-btn,
+  .nav-about-btn {
+    font-size: 0.85rem;
+    padding: 0.15rem 0.3rem;
   }
   
   .main {
-    padding: 1.5rem 0;
+    padding: 1.25rem 0;
   }
   
   .main .container {
@@ -125,8 +136,7 @@
   }
   
   .footer {
-    padding: 1.5rem 0;
-    font-size: 0.875rem;
+    padding: 1rem 0;
+    font-size: 0.8rem;
   }
 }
-

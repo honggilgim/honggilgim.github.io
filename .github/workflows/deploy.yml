@@ -23,6 +23,9 @@ concurrency:
   group: "pages"
   cancel-in-progress: true
 
+# pages-build-deployment 워크플로우와의 충돌 방지
+# 이 워크플로우가 pages 환경에 배포할 때만 실행되도록 보장
+
 jobs:
   build:
     runs-on: ubuntu-latest
