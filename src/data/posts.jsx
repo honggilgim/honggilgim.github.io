@@ -1,6 +1,12 @@
 // 마크다운 파일 import
 import testPostMd from '../posts/test-post.md?raw'
 import javaWrapperClassMd from '../posts/java-wrapper-class.md?raw'
+import struts2FrameworkMd from '../posts/struts2-framework.md?raw'
+import javaParallelProcessingMd from '../posts/java-parallel-processing.md?raw'
+import kakaoOauthErrorSolutionsMd from '../posts/kakao-oauth-error-solutions.md?raw'
+import bitmaskStudyMd from '../posts/bitmask-study.md?raw'
+import tomcatContextPathSeparationMd from '../posts/tomcat-context-path-separation.md?raw'
+import serverCharsetSettingMd from '../posts/server-charset-setting.md?raw'
 
 export const posts = [
   {
@@ -75,6 +81,69 @@ export const posts = [
     thumbnail: '/thumbnails/JAVA.png',
     markdown: true,
     markdownContent: javaWrapperClassMd
+  },
+  {
+    id: 5,
+    title: '스트럿츠2 프레임워크',
+    date: '2023-10-23',
+    excerpt: 'Apache Struts 2 프레임워크의 특징과 스프링 프레임워크와의 차이점을 알아봅니다.',
+    tags: ['자바', 'Struts2', '프레임워크'],
+    series: '자바',
+    thumbnail: '/thumbnails/JAVA.png',
+    markdown: true,
+    markdownContent: struts2FrameworkMd
+  },
+  {
+    id: 6,
+    title: '자바 병렬 처리',
+    date: '2023-10-25',
+    excerpt: '자바의 병렬 처리와 Fork-Join Pool을 활용한 대용량 데이터 처리 방법을 알아봅니다.',
+    tags: ['자바', 'Java'],
+    series: '자바',
+    thumbnail: '/thumbnails/JAVA.png',
+    markdown: true,
+    markdownContent: javaParallelProcessingMd
+  },
+  {
+    id: 7,
+    title: '카카오 oAuth 연동 개발 과정 오류 해결 방법 모음',
+    date: '2024-05-07',
+    excerpt: '전자정부 프레임워크 환경에서 카카오 OAuth 연동 시 발생한 SSL Handshake, 웹앱 환경, CORS 에러 해결 방법을 정리합니다.',
+    tags: ['자바', 'Java', 'OAuth'],
+    series: '자바',
+    thumbnail: '/thumbnails/JAVA.png',
+    markdown: true,
+    markdownContent: kakaoOauthErrorSolutionsMd
+  },
+  {
+    id: 8,
+    title: '비트마스킹 공부',
+    date: '2023-10-28',
+    excerpt: '비트마스킹 알고리즘의 기본 개념과 비트 연산자를 활용한 집합 구현 방법을 C++ 코드로 알아봅니다.',
+    tags: ['알고리즘'],
+    series: '알고리즘',
+    markdown: true,
+    markdownContent: bitmaskStudyMd
+  },
+  {
+    id: 9,
+    title: 'Tomcat(Server) context-path 분리로 ROOT 폴더 2개로 서버 운영하기',
+    date: '2024-11-14',
+    excerpt: '톰캣의 context-path를 활용하여 하나의 서버에서 두 개의 ROOT 폴더로 서로 다른 프로젝트를 운영하는 방법과 개발 과정에서 겪은 문제점과 해결 방법을 정리합니다.',
+    tags: ['Spring', 'Spring boot', 'tomcat'],
+    series: '인프라',
+    markdown: true,
+    markdownContent: tomcatContextPathSeparationMd
+  },
+  {
+    id: 10,
+    title: '서버 charset 맞추기',
+    date: '2024-11-14',
+    excerpt: '서버 간 통신에서 중요한 charset 설정에 대해 알아봅니다. MariaDB와 Oracle에서의 인코딩 변경 방법과 권장 설정을 정리합니다.',
+    tags: ['MariaDB', 'Oracle', '인코딩', 'charset'],
+    series: '인프라',
+    markdown: true,
+    markdownContent: serverCharsetSettingMd
   }
 ]
 
