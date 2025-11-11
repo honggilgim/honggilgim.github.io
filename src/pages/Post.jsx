@@ -1,3 +1,4 @@
+import { useState } from 'react'
 import { useParams, Link } from 'react-router-dom'
 import ReactMarkdown from 'react-markdown'
 import remarkGfm from 'remark-gfm'
@@ -19,6 +20,8 @@ function Post() {
   const seriesPosts = post?.series 
     ? posts.filter(p => p.series === post.series).sort((a, b) => a.id - b.id)
     : []
+  
+  const [isSeriesExpanded, setIsSeriesExpanded] = useState(false)
 
   if (!post) {
     return (
@@ -32,11 +35,6 @@ function Post() {
   return (
     <article className="post">
       <Link to="/" className="back-link">← Back to home</Link>
-      {post.thumbnail && (
-        <div className="post-thumbnail-large">
-          <img src={post.thumbnail} alt={post.title} />
-        </div>
-      )}
       <header className="post-header">
         <h1>{post.title}</h1>
         {post.series && (
@@ -45,31 +43,49 @@ function Post() {
             <span className="series-name">{post.series}</span>
           </div>
         )}
-        <p className="post-meta">
+        <div className="post-meta">
           <span className="post-date">{formatDate(post.date)}</span>
           {post.tags && post.tags.length > 0 && (
-            <span className="post-tags">
+            <div className="post-tags">
               {post.tags.map(tag => (
                 <span key={tag} className="tag">{tag}</span>
               ))}
-            </span>
+            </div>
           )}
-        </p>
+        </div>
       </header>
       
       {seriesPosts.length > 0 && (
         <div className="series-list">
-          <h3 className="series-list-title">{post.series} 시리즈</h3>
-          <ul className="series-posts">
-            {seriesPosts.map((seriesPost, index) => (
-              <li key={seriesPost.id} className={seriesPost.id === postId ? 'active' : ''}>
-                <Link to={`/post/${seriesPost.id}`}>
-                  <span className="series-number">{index + 1}.</span>
-                  <span className="series-title">{seriesPost.title}</span>
-                </Link>
-              </li>
-            ))}
-          </ul>
+          <div className="series-list-header">
+            <h3 className="series-list-title">{post.series} 시리즈</h3>
+            <button 
+              className={`series-toggle-btn ${isSeriesExpanded ? 'expanded' : ''}`}
+              onClick={() => setIsSeriesExpanded(!isSeriesExpanded)}
+              aria-label={`시리즈 목록 ${isSeriesExpanded ? '접기' : '펼치기'}`}
+            >
+              <span className="chevron-icon"></span>
+            </button>
+          </div>
+          <div className={`series-posts-container ${isSeriesExpanded ? 'expanded' : ''}`}>
+            <ul className="series-posts">
+              {seriesPosts.map((seriesPost, index) => (
+                <li key={seriesPost.id} className={seriesPost.id === postId ? 'active' : ''}>
+                  <Link to={`/post/${seriesPost.id}`}>
+                    {seriesPost.id === postId && <span className="series-arrow">→</span>}
+                    <span className="series-number">{index + 1}.</span>
+                    <span className="series-title">{seriesPost.title}</span>
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </div>
+      )}
+      
+      {post.thumbnail && (
+        <div className="post-thumbnail-large">
+          <img src={post.thumbnail} alt={post.title} />
         </div>
       )}
       
