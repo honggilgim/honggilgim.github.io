@@ -44,21 +44,52 @@ jobs:
       
       - name: Verify build output
         run: |
+          echo "=== Build Verification ==="
+          
+          # 1. dist/index.html 존재 확인
           if [ ! -f "dist/index.html" ]; then
-            echo "Error: dist/index.html not found"
+            echo "❌ Error: dist/index.html not found"
             exit 1
           fi
+          echo "✅ dist/index.html exists"
+          
+          # 2. .jsx 파일 참조 확인
           if grep -q "\.jsx" dist/index.html; then
-            echo "Error: dist/index.html contains .jsx references"
+            echo "❌ Error: dist/index.html contains .jsx references"
+            echo "Content:"
             cat dist/index.html
             exit 1
           fi
-          echo "Build verification passed"
-          echo "Checking dist/index.html content:"
+          echo "✅ No .jsx references in dist/index.html"
+          
+          # 3. dist 폴더에 .jsx 파일이 있는지 확인
+          if find dist -name "*.jsx" | grep -q .; then
+            echo "❌ Error: Found .jsx files in dist folder"
+            find dist -name "*.jsx"
+            exit 1
+          fi
+          echo "✅ No .jsx files in dist folder"
+          
+          # 4. .js 파일이 있는지 확인
+          JS_COUNT=$(find dist -name "*.js" | wc -l)
+          if [ "$JS_COUNT" -eq 0 ]; then
+            echo "❌ Error: No .js files found in dist folder"
+            exit 1
+          fi
+          echo "✅ Found $JS_COUNT .js file(s) in dist folder"
+          
+          # 5. dist/index.html 내용 확인
+          echo ""
+          echo "=== dist/index.html content ==="
           cat dist/index.html
           echo ""
-          echo "Checking dist/assets directory:"
+          
+          # 6. dist/assets 디렉토리 확인
+          echo "=== dist/assets directory ==="
           ls -la dist/assets/ || echo "No assets directory found"
+          echo ""
+          
+          echo "✅ Build verification passed - Ready for deployment"
       
       - name: Setup Pages
         uses: actions/configure-pages@v4
