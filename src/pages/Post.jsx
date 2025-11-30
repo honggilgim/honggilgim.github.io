@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { useParams, Link } from 'react-router-dom'
 import ReactMarkdown from 'react-markdown'
 import remarkGfm from 'remark-gfm'
@@ -22,6 +22,51 @@ function Post() {
     : []
   
   const [isSeriesExpanded, setIsSeriesExpanded] = useState(false)
+
+  // 메타데이터 설정
+  useEffect(() => {
+    if (post) {
+      // 페이지 타이틀 설정
+      document.title = `${post.title} - Honggil blog`
+      
+      // 메타 태그 설정
+      const updateMetaTag = (name, content, isProperty = false) => {
+        const attribute = isProperty ? 'property' : 'name'
+        let meta = document.querySelector(`meta[${attribute}="${name}"]`)
+        if (!meta) {
+          meta = document.createElement('meta')
+          meta.setAttribute(attribute, name)
+          document.head.appendChild(meta)
+        }
+        meta.setAttribute('content', content)
+      }
+
+      // Open Graph 메타 태그
+      updateMetaTag('og:title', post.title, true)
+      updateMetaTag('og:description', post.excerpt || '', true)
+      updateMetaTag('og:type', 'article', true)
+      if (post.thumbnail) {
+        updateMetaTag('og:image', window.location.origin + post.thumbnail, true)
+      }
+      
+      // Twitter Card 메타 태그
+      updateMetaTag('twitter:card', 'summary_large_image')
+      updateMetaTag('twitter:title', post.title)
+      updateMetaTag('twitter:description', post.excerpt || '')
+      if (post.thumbnail) {
+        updateMetaTag('twitter:image', window.location.origin + post.thumbnail)
+      }
+      
+      // 기본 메타 태그
+      updateMetaTag('description', post.excerpt || '')
+      updateMetaTag('keywords', post.tags ? post.tags.join(', ') : '')
+    }
+
+    // 컴포넌트 언마운트 시 기본값으로 복원
+    return () => {
+      document.title = 'Honggil blog'
+    }
+  }, [post])
 
   if (!post) {
     return (

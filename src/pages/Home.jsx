@@ -1,3 +1,4 @@
+import { useEffect } from 'react'
 import { Link, useSearchParams } from 'react-router-dom'
 import { posts } from '../data/posts.jsx'
 import { formatDate } from '../utils/dateFormatter'
@@ -7,6 +8,37 @@ function Home() {
   const [searchParams, setSearchParams] = useSearchParams()
   const currentPage = parseInt(searchParams.get('page') || '1', 10)
   const postsPerPage = 9
+
+  // 메타데이터 설정
+  useEffect(() => {
+    // 페이지 타이틀 설정
+    document.title = 'Honggil blog'
+    
+    // 메타 태그 설정
+    const updateMetaTag = (name, content, isProperty = false) => {
+      const attribute = isProperty ? 'property' : 'name'
+      let meta = document.querySelector(`meta[${attribute}="${name}"]`)
+      if (!meta) {
+        meta = document.createElement('meta')
+        meta.setAttribute(attribute, name)
+        document.head.appendChild(meta)
+      }
+      meta.setAttribute('content', content)
+    }
+
+    // Open Graph 메타 태그
+    updateMetaTag('og:title', 'Honggil blog', true)
+    updateMetaTag('og:description', '개발과 일상에 대한 이야기를 공유합니다.', true)
+    updateMetaTag('og:type', 'website', true)
+    
+    // Twitter Card 메타 태그
+    updateMetaTag('twitter:card', 'summary')
+    updateMetaTag('twitter:title', 'Honggil blog')
+    updateMetaTag('twitter:description', '개발과 일상에 대한 이야기를 공유합니다.')
+    
+    // 기본 메타 태그
+    updateMetaTag('description', '개발과 일상에 대한 이야기를 공유합니다.')
+  }, [])
 
   // 작성일 기준 최신순으로 정렬
   const sortedPosts = [...posts].sort((a, b) => {
