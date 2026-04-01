@@ -5,20 +5,22 @@
     <!-- GitHub Pages SPA: 404.html이 ?/경로 형태로 넘긴 주소를 복원 (rafgraph/spa-github-pages) -->
     <script type="text/javascript">
       (function (l) {
-        if (l.search[1] === '/') {
-          var decoded = l.search
-            .slice(1)
-            .split('&')
-            .map(function (s) {
-              return s.replace(/~and~/g, '&')
-            })
-            .join('?')
-          window.history.replaceState(
-            null,
-            null,
-            l.pathname.slice(0, -1) + decoded + l.hash
-          )
+        if (!l.search || l.search.length < 2) return
+        var q = l.search.slice(1)
+        try {
+          q = decodeURIComponent(q.replace(/\+/g, ' '))
+        } catch (e) {
+          return
         }
+        if (q.charAt(0) !== '/') return
+        var decoded = q
+          .split('&')
+          .map(function (s) {
+            return s.replace(/~and~/g, '&')
+          })
+          .join('?')
+        var next = l.pathname.replace(/\/$/, '') + decoded + l.hash
+        window.history.replaceState(null, null, next)
       })(window.location)
     </script>
     <link rel="icon" type="image/png" href="/favicon.png" />
