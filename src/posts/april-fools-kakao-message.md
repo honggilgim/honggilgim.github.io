@@ -187,7 +187,3 @@ export function KakaoLoveMessageShare() {
 리액트 기준으로 짠 코드다. 커서가 짜줬다.
 
 SDK 키 값과, 카카오톡 템플릿 ID만 있으면 발송이 가능한데, 장난용으로 만든 거니 커서, 지피티, 클로드, 제미나이 등 인공지능에 넣으면 알아서 짜준다. 인공지능을 완벽하게 활용하도록 하자. **실제 서비스에서는 조사하고 코딩하자.**
-
----
-
-동일 글은 [Velog 원문](https://velog.io/@honggilgim/%EB%A7%8C%EC%9A%B0%EC%A0%88-%EC%9E%A5%EB%82%9C-%EC%B9%B4%EC%B9%B4%EC%98%A4%ED%86%A1-%EC%86%A1%EA%B8%88-%EB%A9%94%EC%8B%9C%EC%A7%80-%EB%B3%B4%EB%82%B4%EA%B8%B0)에서도 볼 수 있다.
