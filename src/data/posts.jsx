@@ -39,6 +39,7 @@ import wishTicketProjectSetupMd from '../posts/wish-ticket-project-setup.md?raw'
 import wishTicketProjectDbSetupMd from '../posts/wish-ticket-project-db-setup.md?raw'
 import wishTicketProjectJpaSetupMd from '../posts/wish-ticket-project-jpa-setup.md?raw'
 import wishTicketProjectDeploymentMd from '../posts/wish-ticket-project-deployment.md?raw'
+import aprilFoolsKakaoMessageMd from '../posts/april-fools-kakao-message.md?raw'
 import {
   KakaoAprilFoolShare,
   KakaoLoveMessageShare,
@@ -560,6 +561,18 @@ export const posts = [
     thumbnail: '/favicon.png',
     markdown: false,
     content: <KakaoLoveMessageShare />,
+  },
+  {
+    id: 45,
+    title: '<만우절 장난> 카카오톡 송금 메시지 보내기',
+    date: '2026-04-01',
+    excerpt:
+      '만우절 카카오톡 송금 메시지 장난을 카카오 디벨로퍼스 템플릿·JS SDK로 만드는 과정을 정리합니다. (Velog 원문 이전)',
+    tags: ['만우절', '카카오톡', 'Kakao', 'React'],
+    series: '심심할 때 하는 개발',
+    thumbnail: '/favicon.png',
+    markdown: true,
+    markdownContent: aprilFoolsKakaoMessageMd,
   },
 ]
 
