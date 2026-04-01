@@ -570,7 +570,7 @@ export const posts = [
       '만우절 카카오톡 송금 메시지 장난을 카카오 디벨로퍼스 템플릿·JS SDK로 만드는 과정을 정리합니다. (Velog 원문 이전)',
     tags: ['만우절', '카카오톡', 'Kakao', 'React'],
     series: '심심할 때 하는 개발',
-    thumbnail: '/favicon.png',
+    thumbnail: '/images/posts/april-fools-kakao/01.png',
     markdown: true,
     markdownContent: aprilFoolsKakaoMessageMd,
   },

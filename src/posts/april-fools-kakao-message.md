@@ -8,9 +8,9 @@
 
 누르면 이렇게 나온다.
 
-![](https://velog.velcdn.com/images/honggilgim/post/6ebb7286-bfc1-46f2-9d92-6d34720e629a/image.png)
+![](/images/posts/april-fools-kakao/01.png)
 
-![](https://velog.velcdn.com/images/honggilgim/post/9ea0b315-f10e-4d69-ae07-b3235ca45880/image.png)
+![](/images/posts/april-fools-kakao/02.png)
 
 ## 1. 카카오톡 템플릿 생성
 
@@ -20,27 +20,27 @@
 
 우선, [카카오 디벨로퍼스](https://developers.kakao.com/)에 들어가 앱을 생성해 주어야 한다.
 
-![](https://velog.velcdn.com/images/honggilgim/post/35e6a779-8733-426b-8beb-053995b16d5c/image.png)
+![](/images/posts/april-fools-kakao/03.png)
 
 카카오 디벨로퍼스의 앱 탭에 들어가 앱 생성 버튼을 누르면 위 화면이 나오는데, 앱 이름과 회사명은 임의로 지어주도록 하자. 하지만, 알아두어야 할 것이 있는데
 
 저기 빨간 밑줄에 보이는 이름이 앱 이름이다. 장난 칠 거면 신경 써서 지어주도록 하자.
 
-![](https://velog.velcdn.com/images/honggilgim/post/eaa4d751-2e95-474a-8e6f-64f1a9e321b5/image.png)
+![](/images/posts/april-fools-kakao/04.png)
 
 들어간 후 앱 대시보드에 들어가면 위처럼 화면이 나타난다. 우리는 다른 설정은 할 필요 없이 오직 만우절용 템플릿만 만들 것이니 만우절 템플릿용에서 필요한 부분만 체크하면 된다.
 
-![](https://velog.velcdn.com/images/honggilgim/post/a4691361-2659-40cc-8eeb-5171c60c7f95/image.png)
+![](/images/posts/april-fools-kakao/05.png)
 
 카카오톡 메시지는 카카오 디벨로퍼스에서도 만들도록 지원을 해주는데
 
 앱 > 제품 설정 > 카카오톡 메시지에 들어간 후 메시지 템플릿 빌더를 클릭하면 간단하게 카카오톡 템플릿을 만들 수 있다.
 
-![](https://velog.velcdn.com/images/honggilgim/post/354ee489-accd-4bea-b68e-3071faedc970/image.png)
+![](/images/posts/april-fools-kakao/06.png)
 
 다만,
 
-![](https://velog.velcdn.com/images/honggilgim/post/13b29e6f-46a9-42ba-8686-86874ff3660a/image.png)
+![](/images/posts/april-fools-kakao/07.png)
 
 위 링크 설정 부분이 중요하다. 이 부분을 넣어주어야 링크를 넣을 수 있다.
 
@@ -48,7 +48,7 @@
 
 안에 들어가면 링크를 넣을 수 있는데, 이곳에 낚시 이미지를 넣어주면 된다. 나는 깃허브 블로그를 가진 게 있어서 적은 후, 따로 fake 페이지를 만들어 링크를 연결했다.
 
-![](https://velog.velcdn.com/images/honggilgim/post/301f918f-abd2-4a6c-b186-d69d620f4641/image.png)
+![](/images/posts/april-fools-kakao/08.png)
 
 ## 발송
 
@@ -63,17 +63,17 @@
 
 이렇게만 보면 정말 어려워 보이지만, 장난에 많은 시간을 소요하기는 좀 그러니
 
-![](https://velog.velcdn.com/images/honggilgim/post/8d426972-52d7-43d6-8714-b71189d5f1be/image.png)
+![](/images/posts/april-fools-kakao/09.png)
 
 우리는 이 부분에 있는 SDK 값과,
 
-![](https://velog.velcdn.com/images/honggilgim/post/b318f163-80ce-4340-9302-e74fb27c12b6/image.png)
+![](/images/posts/april-fools-kakao/10.png)
 
 이곳에 있는 카카오톡 템플릿 ID만 사용하면 된다!
 
 그리고 SDK를 사용하기 위해
 
-![](https://velog.velcdn.com/images/honggilgim/post/8ee3909e-42d1-4877-a793-149e9d3f9915/image.png)
+![](/images/posts/april-fools-kakao/11.png)
 
 SDK 키 값을 사용할 수 있도록 하는 도메인을 등록하는 일을 잊지 말자. 이곳에 등록해주면 된다. 로컬에서 할 경우는 `localhost` 또는 `127.0.0.1` 이런 식으로 등록해주면 된다.
 
