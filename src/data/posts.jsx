@@ -39,6 +39,7 @@ import wishTicketProjectSetupMd from '../posts/wish-ticket-project-setup.md?raw'
 import wishTicketProjectDbSetupMd from '../posts/wish-ticket-project-db-setup.md?raw'
 import wishTicketProjectJpaSetupMd from '../posts/wish-ticket-project-jpa-setup.md?raw'
 import wishTicketProjectDeploymentMd from '../posts/wish-ticket-project-deployment.md?raw'
+import { KakaoAprilFoolShare } from '../components/KakaoAprilFoolShare.jsx'
 
 export const posts = [
   {
@@ -534,6 +535,17 @@ export const posts = [
     thumbnail: '/thumbnails/OLLAMA.png',
     markdown: true,
     markdownContent: ollamaApiServerPracticeMd
-  }
+  },
+  {
+    id: 43,
+    title: '카카오 장난 메시지 공유',
+    date: '2026-04-01',
+    excerpt:
+      '만우절 카톡 송금하기 버튼 훼이크를 카카오톡 커스텀 메시지 템플릿으로 공유하는 페이지입니다.',
+    tags: ['카카오', 'Kakao', '만우절'],
+    thumbnail: '/favicon.png',
+    markdown: false,
+    content: <KakaoAprilFoolShare />,
+  },
 ]
 
