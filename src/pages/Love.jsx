@@ -8,7 +8,7 @@ function Love() {
         src="/image/love.jpg"
         alt=""
       />
-      <p className="love-page__caption">사랑을 보냈습니다</p>
+      <p className="love-page__caption">사랑해용 ❤️</p>
     </div>
   )
 }
