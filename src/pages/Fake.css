@@ -1,0 +1,25 @@
+.fake-page {
+  min-height: 100vh;
+  margin: 0;
+  padding: 2rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  background: #0f0f0f;
+  color: #fafafa;
+}
+
+.fake-page__img {
+  max-width: min(100%, 720px);
+  height: auto;
+  display: block;
+  border-radius: 8px;
+}
+
+.fake-page__caption {
+  margin: 1.25rem 0 0;
+  font-size: clamp(1.125rem, 2.5vw, 1.5rem);
+  letter-spacing: 0.02em;
+}
