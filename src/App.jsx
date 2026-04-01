@@ -3,6 +3,7 @@ import Layout from './components/Layout'
 import Home from './pages/Home'
 import Post from './pages/Post'
 import Fake from './pages/Fake'
+import Love from './pages/Love'
 import './App.css'
 
 function App() {
@@ -10,6 +11,7 @@ function App() {
     <Router>
       <Routes>
         <Route path="/fake" element={<Fake />} />
+        <Route path="/love" element={<Love />} />
         <Route
           path="/"
           element={
