@@ -2,6 +2,25 @@
 <html lang="ko">
   <head>
     <meta charset="UTF-8" />
+    <!-- GitHub Pages SPA: 404.html이 ?/경로 형태로 넘긴 주소를 복원 (rafgraph/spa-github-pages) -->
+    <script type="text/javascript">
+      (function (l) {
+        if (l.search[1] === '/') {
+          var decoded = l.search
+            .slice(1)
+            .split('&')
+            .map(function (s) {
+              return s.replace(/~and~/g, '&')
+            })
+            .join('?')
+          window.history.replaceState(
+            null,
+            null,
+            l.pathname.slice(0, -1) + decoded + l.hash
+          )
+        }
+      })(window.location)
+    </script>
     <link rel="icon" type="image/png" href="/favicon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="개발과 일상에 대한 이야기를 공유합니다." />
