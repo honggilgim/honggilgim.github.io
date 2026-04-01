@@ -1,4 +1,4 @@
-.kakao-aprilfool {
+.kakao-template-share {
   font-family: sans-serif;
   text-align: center;
   margin: 2rem 0 3rem;
@@ -8,22 +8,22 @@
   border: 1px solid rgba(0, 0, 0, 0.06);
 }
 
-.kakao-aprilfool h2 {
+.kakao-template-share h2 {
   margin: 0 0 0.75rem;
   font-size: 1.35rem;
 }
 
-.kakao-aprilfool p {
+.kakao-template-share p {
   margin: 0 0 1.25rem;
   color: var(--post-text-muted, #555);
 }
 
-.kakao-aprilfool__err {
+.kakao-template-share__err {
   color: #c62828;
   font-size: 0.9rem;
 }
 
-.kakao-aprilfool__btn {
+.kakao-template-share__btn {
   padding: 12px 24px;
   font-size: 18px;
   background-color: #fee500;
@@ -34,11 +34,11 @@
   color: #191919;
 }
 
-.kakao-aprilfool__btn:disabled {
+.kakao-template-share__btn:disabled {
   opacity: 0.65;
   cursor: not-allowed;
 }
 
-.kakao-aprilfool__btn:not(:disabled):hover {
+.kakao-template-share__btn:not(:disabled):hover {
   filter: brightness(0.97);
 }

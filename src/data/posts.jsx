@@ -39,7 +39,10 @@ import wishTicketProjectSetupMd from '../posts/wish-ticket-project-setup.md?raw'
 import wishTicketProjectDbSetupMd from '../posts/wish-ticket-project-db-setup.md?raw'
 import wishTicketProjectJpaSetupMd from '../posts/wish-ticket-project-jpa-setup.md?raw'
 import wishTicketProjectDeploymentMd from '../posts/wish-ticket-project-deployment.md?raw'
-import { KakaoAprilFoolShare } from '../components/KakaoAprilFoolShare.jsx'
+import {
+  KakaoAprilFoolShare,
+  KakaoLoveMessageShare,
+} from '../components/KakaoTemplateShare.jsx'
 
 export const posts = [
   {
@@ -546,6 +549,17 @@ export const posts = [
     thumbnail: '/favicon.png',
     markdown: false,
     content: <KakaoAprilFoolShare />,
+  },
+  {
+    id: 44,
+    title: '사랑 메시지 공유',
+    date: '2026-04-01',
+    excerpt:
+      '카카오톡 커스텀 메시지 템플릿으로 사랑 메시지를 보내는 페이지입니다.',
+    tags: ['카카오', 'Kakao', '사랑'],
+    thumbnail: '/favicon.png',
+    markdown: false,
+    content: <KakaoLoveMessageShare />,
   },
 ]
 
