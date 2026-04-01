@@ -547,7 +547,7 @@ export const posts = [
     excerpt:
       '만우절 카톡 송금하기 버튼 훼이크를 카카오톡 커스텀 메시지 템플릿으로 공유하는 페이지입니다.',
     tags: ['카카오', 'Kakao', '만우절'],
-    thumbnail: '/favicon.png',
+    thumbnail: '/thumbnails/KAKAO_SEND_MESSAGE.png',
     markdown: false,
     content: <KakaoAprilFoolShare />,
   },
@@ -558,7 +558,7 @@ export const posts = [
     excerpt:
       '카카오톡 커스텀 메시지 템플릿으로 사랑 메시지를 보내는 페이지입니다.',
     tags: ['카카오', 'Kakao', '사랑'],
-    thumbnail: '/favicon.png',
+    thumbnail: '/thumbnails/KAKAO_SEND_MESSAGE.png',
     markdown: false,
     content: <KakaoLoveMessageShare />,
   },
@@ -570,7 +570,7 @@ export const posts = [
       '만우절 카카오톡 송금 메시지 장난을 카카오 디벨로퍼스 템플릿·JS SDK로 만드는 과정을 정리합니다. (Velog 원문 이전)',
     tags: ['만우절', '카카오톡', 'Kakao', 'React'],
     series: '심심할 때 하는 개발',
-    thumbnail: '/images/posts/april-fools-kakao/01.png',
+    thumbnail: '/thumbnails/KAKAO_SEND_MESSAGE.png',
     markdown: true,
     markdownContent: aprilFoolsKakaoMessageMd,
   },
