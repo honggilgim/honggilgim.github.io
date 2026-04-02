@@ -40,10 +40,8 @@ import wishTicketProjectDbSetupMd from '../posts/wish-ticket-project-db-setup.md
 import wishTicketProjectJpaSetupMd from '../posts/wish-ticket-project-jpa-setup.md?raw'
 import wishTicketProjectDeploymentMd from '../posts/wish-ticket-project-deployment.md?raw'
 import aprilFoolsKakaoMessageMd from '../posts/april-fools-kakao-message.md?raw'
-import {
-  KakaoAprilFoolShare,
-  KakaoLoveMessageShare,
-} from '../components/KakaoTemplateShare.jsx'
+import tokscaleAiTokenVisualizationMd from '../posts/tokscale-ai-token-visualization.md?raw'
+import { KakaoAprilFoolShare } from '../components/KakaoTemplateShare.jsx'
 
 export const posts = [
   {
@@ -552,17 +550,6 @@ export const posts = [
     content: <KakaoAprilFoolShare />,
   },
   {
-    id: 44,
-    title: '사랑 메시지 공유',
-    date: '2026-04-01',
-    excerpt:
-      '카카오톡 커스텀 메시지 템플릿으로 사랑 메시지를 보내는 페이지입니다.',
-    tags: ['카카오', 'Kakao', '사랑'],
-    thumbnail: '/thumbnails/KAKAO_SEND_MESSAGE.png',
-    markdown: false,
-    content: <KakaoLoveMessageShare />,
-  },
-  {
     id: 45,
     title: '<만우절 장난> 카카오톡 송금 메시지 보내기',
     date: '2026-04-01',
@@ -573,6 +560,18 @@ export const posts = [
     thumbnail: '/thumbnails/KAKAO_SEND_MESSAGE.png',
     markdown: true,
     markdownContent: aprilFoolsKakaoMessageMd,
+  },
+  {
+    id: 46,
+    title: 'tokscale AI 토큰 시각화 도구',
+    date: '2026-04-02',
+    excerpt:
+      'junhoyeo/tokscale로 AI 토큰 사용량을 시각화·추적하는 오픈소스 도구를 소개합니다. 설치, CLI 화면, 리더보드 활용까지 정리합니다.',
+    tags: ['Tokscale', 'AI', '오픈소스', '토큰'],
+    series: '심심할 때 하는 개발',
+    thumbnail: '/images/posts/tokscale/01.png',
+    markdown: true,
+    markdownContent: tokscaleAiTokenVisualizationMd,
   },
 ]
 

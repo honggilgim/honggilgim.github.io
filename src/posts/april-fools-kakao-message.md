@@ -175,16 +175,6 @@ export function KakaoAprilFoolShare() {
     />
   )
 }
-
-export function KakaoLoveMessageShare() {
-  return (
-    <KakaoTemplateShare
-      templateId={#카카오톡 템플릿 ID}
-      heading=""
-      description=""
-    />
-  )
-}
 ```
 
 리액트 기준으로 짠 코드다. ~~커서가 짜줬다.~~

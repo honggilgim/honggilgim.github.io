@@ -92,13 +92,3 @@ export function KakaoAprilFoolShare() {
     />
   )
 }
-
-export function KakaoLoveMessageShare() {
-  return (
-    <KakaoTemplateShare
-      templateId={131301}
-      heading="사랑 메시지 공유"
-      description="카카오톡 커스텀 메시지 템플릿으로 마음을 전해 보세요."
-    />
-  )
-}
