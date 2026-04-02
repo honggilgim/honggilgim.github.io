@@ -2,6 +2,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Layout from './components/Layout'
 import Home from './pages/Home'
 import Post from './pages/Post'
+import Category from './pages/Category'
 import Fake from './pages/Fake'
 import Love from './pages/Love'
 import './App.css'
@@ -25,6 +26,14 @@ function App() {
           element={
             <Layout>
               <Post />
+            </Layout>
+          }
+        />
+        <Route
+          path="/category/:seriesName"
+          element={
+            <Layout>
+              <Category />
             </Layout>
           }
         />

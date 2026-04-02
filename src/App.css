@@ -1,6 +1,1 @@
-.app {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-}
-
+/* 레이아웃은 Layout.css의 .layout-root에서 처리 */

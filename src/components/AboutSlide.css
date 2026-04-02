@@ -5,7 +5,7 @@
   right: 0;
   bottom: 0;
   background-color: rgba(0, 0, 0, 0.3);
-  z-index: 998;
+  z-index: 1098;
   animation: fadeIn 0.3s ease;
 }
 
@@ -27,7 +27,7 @@
   height: 100vh;
   background-color: #fff;
   box-shadow: -2px 0 10px rgba(0, 0, 0, 0.15);
-  z-index: 999;
+  z-index: 1099;
   overflow-y: auto;
   animation: slideIn 0.3s ease;
   display: flex;
@@ -55,7 +55,7 @@
   padding: 0.4rem;
   line-height: 1;
   transition: color 0.2s ease;
-  z-index: 1000;
+  z-index: 1100;
 }
 
 .about-close:hover {

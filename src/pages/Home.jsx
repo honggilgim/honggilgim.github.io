@@ -2,6 +2,7 @@ import { useEffect } from 'react'
 import { Link, useSearchParams } from 'react-router-dom'
 import { posts } from '../data/posts.jsx'
 import { formatDate } from '../utils/dateFormatter'
+import { SITE_TITLE, SITE_TAGLINE } from '../config/site'
 import './Home.css'
 
 function Home() {
@@ -12,7 +13,7 @@ function Home() {
   // 메타데이터 설정
   useEffect(() => {
     // 페이지 타이틀 설정
-    document.title = 'Honggil blog'
+    document.title = SITE_TITLE
     
     // 메타 태그 설정
     const updateMetaTag = (name, content, isProperty = false) => {
@@ -27,17 +28,17 @@ function Home() {
     }
 
     // Open Graph 메타 태그
-    updateMetaTag('og:title', 'Honggil blog', true)
-    updateMetaTag('og:description', '개발과 일상에 대한 이야기를 공유합니다.', true)
+    updateMetaTag('og:title', SITE_TITLE, true)
+    updateMetaTag('og:description', SITE_TAGLINE, true)
     updateMetaTag('og:type', 'website', true)
     
     // Twitter Card 메타 태그
     updateMetaTag('twitter:card', 'summary')
-    updateMetaTag('twitter:title', 'Honggil blog')
-    updateMetaTag('twitter:description', '개발과 일상에 대한 이야기를 공유합니다.')
+    updateMetaTag('twitter:title', SITE_TITLE)
+    updateMetaTag('twitter:description', SITE_TAGLINE)
     
     // 기본 메타 태그
-    updateMetaTag('description', '개발과 일상에 대한 이야기를 공유합니다.')
+    updateMetaTag('description', SITE_TAGLINE)
   }, [])
 
   // 작성일 기준 최신순으로 정렬
@@ -60,13 +61,17 @@ function Home() {
 
   return (
     <div className="home">
-      <section className="hero">
-        <h2>Welcome to My Blog</h2>
-        <p>개발과 일상에 대한 이야기를 공유합니다.</p>
-      </section>
-      
+      <nav className="home-breadcrumb" aria-label="breadcrumb">
+        <span className="home-breadcrumb__current">Home</span>
+      </nav>
+
+      <header className="home-header">
+        <h1 className="home-title">{SITE_TITLE}</h1>
+        <p className="home-tagline">{SITE_TAGLINE}</p>
+      </header>
+
       <section className="posts-section">
-        <h2>Recent Posts</h2>
+        <h2 className="posts-section__heading">Recent posts</h2>
         <div className="posts-grid">
           {currentPosts.map((post) => (
             <article key={post.id} className="post-card">
