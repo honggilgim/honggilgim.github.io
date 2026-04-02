@@ -1,0 +1,17 @@
+.giscus-comments {
+  margin-top: 2.5rem;
+  padding-top: 1.75rem;
+  border-top: 1px solid #ddd;
+}
+
+.giscus-comments__heading {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin: 0 0 1rem;
+  color: #222;
+  font-family: inherit;
+}
+
+.giscus-comments .giscus {
+  width: 100%;
+}

@@ -9,6 +9,7 @@ import './Post.css'
 import 'highlight.js/styles/github.css'
 import { SITE_TITLE } from '../config/site'
 import { toCategoryPath } from '../utils/categoryPath'
+import GiscusComments from '../components/GiscusComments'
 
 function Post() {
   const { id } = useParams()
@@ -177,6 +178,8 @@ function Post() {
           </Link>
         )}
       </div>
+
+      <GiscusComments />
     </article>
   )
 }
