@@ -41,6 +41,7 @@ import wishTicketProjectJpaSetupMd from '../posts/wish-ticket-project-jpa-setup.
 import wishTicketProjectDeploymentMd from '../posts/wish-ticket-project-deployment.md?raw'
 import aprilFoolsKakaoMessageMd from '../posts/april-fools-kakao-message.md?raw'
 import tokscaleAiTokenVisualizationMd from '../posts/tokscale-ai-token-visualization.md?raw'
+import projectChosungSearchDbQueryMd from '../posts/project-chosung-search-db-query.md?raw'
 import { KakaoAprilFoolShare } from '../components/KakaoTemplateShare.jsx'
 
 export const posts = [
@@ -572,6 +573,18 @@ export const posts = [
     thumbnail: '/images/posts/tokscale/01.png',
     markdown: true,
     markdownContent: tokscaleAiTokenVisualizationMd,
+  },
+  {
+    id: 47,
+    title: '프로젝트 기록 - 초성검색 구현 (DB + 쿼리)',
+    date: '2026-04-19',
+    excerpt:
+      '핀유트 프로젝트에서 장소(place) 이름 초성 검색을 DB·SQL로 구현한 과정을 정리합니다. 유니코드 역산, ApplicationRunner 마이그레이션, 초성 전용 판별 및 쿼리 조건까지 소개합니다.',
+    tags: ['Spring', 'Java', 'DB', '초성검색', '프로젝트'],
+    series: '프로젝트',
+    thumbnail: '/thumbnails/project-chosung-search-db-query.png',
+    markdown: true,
+    markdownContent: projectChosungSearchDbQueryMd,
   },
 ]
 
