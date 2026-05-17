@@ -42,6 +42,7 @@ import wishTicketProjectDeploymentMd from '../posts/wish-ticket-project-deployme
 import aprilFoolsKakaoMessageMd from '../posts/april-fools-kakao-message.md?raw'
 import tokscaleAiTokenVisualizationMd from '../posts/tokscale-ai-token-visualization.md?raw'
 import projectChosungSearchDbQueryMd from '../posts/project-chosung-search-db-query.md?raw'
+import projectAutoTranslationGoogleApiMd from '../posts/project-auto-translation-google-api.md?raw'
 import { KakaoAprilFoolShare } from '../components/KakaoTemplateShare.jsx'
 
 export const posts = [
@@ -585,6 +586,18 @@ export const posts = [
     thumbnail: '/thumbnails/project-chosung-search-db-query.png',
     markdown: true,
     markdownContent: projectChosungSearchDbQueryMd,
+  },
+  {
+    id: 48,
+    title: '프로젝트 기록 - 자동 번역 기능 만들기 (Feat. 구글 번역 api)',
+    date: '2026-05-17',
+    excerpt:
+      '핀유트 프로젝트에서 Google Cloud Translation API v3와 OAuth2 서비스 계정으로 자동 번역을 구현한 과정을 정리합니다. API 선택, IAM 설정, TranslationService 및 ApplicationRunner 마이그레이션까지 소개합니다.',
+    tags: ['Spring', 'Java', 'Google Cloud', '번역', '프로젝트'],
+    series: '프로젝트',
+    thumbnail: '/thumbnails/project-chosung-search-db-query.png',
+    markdown: true,
+    markdownContent: projectAutoTranslationGoogleApiMd,
   },
 ]
 
